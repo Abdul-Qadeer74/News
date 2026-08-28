@@ -1,6 +1,5 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Searchbtn from "./Components/Main/Searchbtn";
-import Maindata from "./Components/Main/Maindata";
 
 import Technology from "./Components/Main/Technology";
 import Home from "./Components/Main/Home";
@@ -13,13 +12,21 @@ import { Routes, Route } from "react-router";
 
 const App = () => {
   return (
-    <div className="h-screen w-full ">
+    <div className="h-screen w-full">
       <Navbar />
-      <Searchbtn />
-      <Maindata />
+
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Search" element={<Home />} />
+        <Route
+          path="/Search"
+          element={
+            <>
+              <Searchbtn />
+              <Home />
+            </>
+          }
+        />
+
         <Route path="/Technology" element={<Technology />} />
         <Route path="/Buisness" element={<Buisness />} />
         <Route path="/Entertainment" element={<Entertainment />} />

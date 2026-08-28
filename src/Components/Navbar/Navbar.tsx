@@ -9,29 +9,28 @@ const Navbar = () => {
       </div>
       <div className="h-full w-[80%]  md:text-2xl  ">
         <ul className="h-full w-full flex justify-evenly items-center lg:flex xs:hidden ">
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/Search">Search</Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/Buisness">Buisness</Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/Technology">Technology</Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/Sports">Sports</Link>
           </li>
-          <li>
-            {" "}
+          <li className="hover:text-yellow-400">
             <Link to="/Entertainment">Entertainment</Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/Health">Health</Link>
           </li>
-          <li>
+          <li className="hover:text-yellow-400">
             <Link to="/Science">Science</Link>
           </li>
         </ul>

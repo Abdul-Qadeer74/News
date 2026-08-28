@@ -27,7 +27,7 @@ const Menubtn = () => {
       </button>
 
       <div
-        className={`absolute left-0  h-[35%] w-full origin-top  bg-black p-2  transition-all duration-200 ${
+        className={`absolute left-0 top-14  h-[35%] w-full origin-top  bg-black p-2  transition-all duration-200 ${
           isOpen
             ? "visible translate-y-0 scale-100 opacity-100"
             : "invisible -translate-y-2 scale-95 opacity-0"
@@ -38,7 +38,7 @@ const Menubtn = () => {
             key={item.path}
             to={item.path}
             onClick={() => setIsOpen(false)}
-            className="flex flex-col w-full   text-left text-white transition"
+            className="flex flex-col w-full   text-left text-white transition hover:text-yellow-400"
           >
             {item.name}
           </Link>
